@@ -5,10 +5,6 @@
         var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
         return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
     }
-    
-    string ContentSize() {
-        return Model.AsideFirst != null ? "span9" : "span12";
-    }
 }
 @{
     /* Global includes for the theme
@@ -16,7 +12,7 @@
     
     SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
     //Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
-    Style.Include("bootstrap.min.css");
+    Style.Include("styles.css");
 
     /* Some useful shortcuts or settings
     ***************************************************************/
@@ -33,40 +29,16 @@
 
 }
 
+@*
 @if (Model.Header != null) {
 <header id="layout-header" class="group">
     <div id="header">
         @Zone(Model.Header)
     </div>
 </header>
-}
+}*@
 
-<div class="container-fluid">
-    @if (Model.Hero != null)  
-    {   
-        <div class="row-fluid">
-         <div class="span12">
-            <div class="hero-unit">
-                @Zone(Model.Featured)
-            </div>
-         </div>
-        </div>
-    }
 
-    <div class="row-fluid">
-         @if (Model.AsideFirst != null) {
-            <div class="span3">
-                @Zone(Model.AsideFirst)
-            </div>
-        }
-
-        <div class="@ContentSize()">
-            @if (Model.Featured != null)  
-            {   
-                <div class="hero-unit">
-                    @Zone(Model.Featured)
-                </div>
-            }   
  
          @*   @if (Model.Messages != null) {
             <div id="messages">
@@ -74,10 +46,25 @@
             </div>
             }*@
 
-            @if (Model.Content != null) {
-                @Zone(Model.Content)
+           
 
-            }
-        </div>
-    </div>
-</div>
+<header>
+    <section class="branding">
+    <a href="/" id="logo">
+        ThemeName
+    </a>
+    </section>
+</header>
+<section id="main">
+        @if (Model.Content != null) 
+        {
+            @Zone(Model.Content)
+        }
+</section>
+@if (Model.Footer != null) {
+    <footer>
+        <section>
+            @Zone(Model.Footer)
+        </section>
+    </footer>
+}
