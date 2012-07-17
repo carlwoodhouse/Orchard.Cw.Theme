@@ -1,0 +1,7 @@
+﻿Name: CWTheme
+Author: Carl Woodhouse
+Description: theme for carlwoodhouse.com
+Version: 1.4.1
+Tags: Awesome
+Website: http://www.carlwoodhouse.com
+Zones: Header, Navigation, Hero, Featured, Messages, AsideFirst, Content, Footer

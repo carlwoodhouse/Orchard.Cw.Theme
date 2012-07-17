@@ -1,0 +1,83 @@
+﻿@functions {
+    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
+    string CalcuClassify(string[] zoneNames, string classNamePrefix) {
+        var zoneCounter = 0;
+        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
+        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
+    }
+    
+    string ContentSize() {
+        return Model.AsideFirst != null ? "span9" : "span12";
+    }
+}
+@{
+    /* Global includes for the theme
+    ***************************************************************/
+    
+    SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
+    //Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
+    Style.Include("bootstrap.min.css");
+
+    /* Some useful shortcuts or settings
+    ***************************************************************/
+
+    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+
+
+    /* Inserting some ad hoc shapes
+    ***************************************************************/
+
+    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page
+    WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
+    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+
+}
+
+@if (Model.Header != null) {
+<header id="layout-header" class="group">
+    <div id="header">
+        @Zone(Model.Header)
+    </div>
+</header>
+}
+
+<div class="container-fluid">
+    @if (Model.Hero != null)  
+    {   
+        <div class="row-fluid">
+         <div class="span12">
+            <div class="hero-unit">
+                @Zone(Model.Featured)
+            </div>
+         </div>
+        </div>
+    }
+
+    <div class="row-fluid">
+         @if (Model.AsideFirst != null) {
+            <div class="span3">
+                @Zone(Model.AsideFirst)
+            </div>
+        }
+
+        <div class="@ContentSize()">
+            @if (Model.Featured != null)  
+            {   
+                <div class="hero-unit">
+                    @Zone(Model.Featured)
+                </div>
+            }   
+ 
+         @*   @if (Model.Messages != null) {
+            <div id="messages">
+                @Zone(Model.Messages)
+            </div>
+            }*@
+
+            @if (Model.Content != null) {
+                @Zone(Model.Content)
+
+            }
+        </div>
+    </div>
+</div>
