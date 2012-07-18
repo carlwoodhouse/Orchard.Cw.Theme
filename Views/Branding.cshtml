@@ -1,4 +1,9 @@
 ﻿@{
     var homeUrl = Href("~/");
 }
-<h1 id="branding"><a href="@homeUrl">@WorkContext.CurrentSite.SiteName</a></h1>
+
+<section class="branding">
+    <a href="@homeUrl" id="logo">
+        @WorkContext.CurrentSite.SiteName
+    </a>
+</section>

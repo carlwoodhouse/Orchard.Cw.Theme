@@ -5,6 +5,10 @@
         var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
         return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
     }
+    
+    string MainClass() {
+        return Model.AsideFirst != null ? "aside" : "solo";
+    }
 }
 @{
     /* Global includes for the theme
@@ -26,41 +30,23 @@
     WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page
     WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
-
 }
-
-@*
-@if (Model.Header != null) {
-<header id="layout-header" class="group">
-    <div id="header">
-        @Zone(Model.Header)
-    </div>
-</header>
-}*@
-
-
- 
-         @*   @if (Model.Messages != null) {
-            <div id="messages">
-                @Zone(Model.Messages)
-            </div>
-            }*@
-
            
-
-<header>
-    <section class="branding">
-    <a href="/" id="logo">
-        ThemeName
-    </a>
-    </section>
-</header>
+@if (Model.Header != null) {
+    <header>
+        @Zone(Model.Header)
+    </header>
+ }
+    
 <section id="main">
         @if (Model.Content != null) 
         {
-            @Zone(Model.Content)
+            <section>
+                @Zone(Model.Content)
+            </section>
         }
 </section>
+
 @if (Model.Footer != null) {
     <footer>
         <section>
