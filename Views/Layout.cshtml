@@ -1,53 +1,58 @@
-﻿@functions {
-    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
-    string CalcuClassify(string[] zoneNames, string classNamePrefix) {
-        var zoneCounter = 0;
-        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : "";}).ToArray());
-        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
-    }
+﻿@{
+    /* Lets set some classes */
+    Layout.BodyId = Model.AsideFirst != null ? string.Empty : "full";
     
-    string MainClass() {
-        return Model.AsideFirst != null ? "aside" : "solo";
-    }
-}
-@{
     /* Global includes for the theme
     ***************************************************************/
     
     SetMeta("X-UA-Compatible", "IE=edge,chrome=1");
-    //Style.Include("http://fonts.googleapis.com/css?family=Lobster&subset=latin");
     Style.Include("styles.css");
+
+    Script.Include("http://use.typekit.com/vyh1iho.js").AtHead();
+    using(Script.Head()) {
+            <script type="text/javascript">try { Typekit.load(); } catch (e) { }</script>
+    }
+    Script.Require("jQuery").AtFoot();
+    Script.Include("cw.main.js").AtFoot();
 
     /* Some useful shortcuts or settings
     ***************************************************************/
 
     Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
 
-
     /* Inserting some ad hoc shapes
     ***************************************************************/
 
     WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page
-    WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
-    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+    //WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
+    //WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
            
-@if (Model.Header != null) {
-    <header>
+@if (Model.Header != null)
+{
+    <header class="page-header">
         @Zone(Model.Header)
     </header>
- }
+}
     
 <section id="main">
-        @if (Model.Content != null) 
+        @if (Model.Content != null)
         {
             <section>
                 @Zone(Model.Content)
             </section>
         }
+        
+        @if (Model.AsideFirst != null) 
+        {
+            <aside>
+                @Zone(Model.AsideFirst)
+            </aside>
+        }
 </section>
 
-@if (Model.Footer != null) {
+@if (Model.Footer != null)
+{
     <footer>
         <section>
             @Zone(Model.Footer)
