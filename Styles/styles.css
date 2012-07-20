@@ -409,7 +409,7 @@ header.page-header
 
 header.page-header a
 {
-    color: #2FC2EF;
+    color: white;
     font-size: 28px;
     text-decoration: none;
 }
@@ -624,6 +624,18 @@ aside .button, aside button.negative, aside .negative.button, aside
 	font-size: 15px;
 	font-weight: 400;
 	color: #fff;
+}
+
+span.life {
+   color: #2FC2EF;
+}
+
+span.tech {
+   color: #6C138A;
+}
+
+span.everything {
+   color: #F78F1E;
 }
 
 
