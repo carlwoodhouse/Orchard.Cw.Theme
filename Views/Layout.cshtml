@@ -1,7 +1,7 @@
 ﻿@{
     /* Lets set some classes */
-    Layout.BodyId = Model.AsideFirst != null ? string.Empty : "full";
-    
+    Layout.BodyId = Model.AsideFirst != null ? string.Empty : !string.IsNullOrEmpty((string)Layout.BodyId) ? Layout.BodyId : "full";
+
     /* Global includes for the theme
     ***************************************************************/
     

@@ -14,4 +14,8 @@
     <Place Parts_Common_Metadata="-"/>
   </Match>
 -->
+    <Match ContentType="HomePage">
+        <Place Fields_Common_Text-Introduction="Content:1"/>
+    </Match>
+    
 </Placement>
