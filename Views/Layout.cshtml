@@ -51,11 +51,17 @@
         }
 </section>
 
-@if (Model.Footer != null)
-{
-    <footer>
-        <section>
-            @Zone(Model.Footer)
-        </section>
-    </footer>
-}
+<footer id="main-footer">
+	@if (Model.Footer != null)
+	{
+			// the actual footer will probably be a html widget
+			<section>
+				@Zone(Model.Footer)
+			</section>
+
+	}
+	
+	<section>
+		lalala
+	</section>
+</footer>

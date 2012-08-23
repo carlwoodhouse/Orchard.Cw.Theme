@@ -395,8 +395,8 @@ p {
   -moz-user-select: auto;
   -webkit-user-select: auto;
     color: #838383;
-    font-size: 18px;
     font-weight: 300;
+	line-height: 1.8;
     margin: 2px 0; 
 }
 
@@ -420,6 +420,18 @@ header.page-header a
 footer {
   clear: both;
   margin-top: 40px;
+}
+
+#main-footer {
+	background-color: #3A3B3F;
+	color: #fff;
+	height: 300px;
+}
+
+#main-footer section {
+	width: 920px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #main {
