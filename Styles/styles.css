@@ -408,7 +408,7 @@ section {
 }
 
 header.page-header section {
-    border-bottom: 1px solid #3A3B3F;
+    border-bottom: 1px solid #CCC;
 }
 
 header.page-header a
@@ -425,17 +425,27 @@ footer {
 #main-footer {
 	background-color: #3A3B3F;
 	color: #fff;
-	height: 300px;
+	height: 200px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 #main-footer section {
 	width: 920px;
 	margin-left: auto;
 	margin-right: auto;
+    margin-bottom: 0;
+}
+
+#main-footer section .column-row 
+{
+    width: 50%;
 }
 
 #main {
   *zoom: 1;
+  overflow: hidden;
+  margin-bottom: 0px;
 }
 
 #main:after {
@@ -457,6 +467,10 @@ aside {
   float: right;
   width: 222.857px;
   padding: 40px 0;
+  background-color: #EEE;
+  border-left: 1px solid #CCC;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
 }
 
 #solo #main {
@@ -574,7 +588,55 @@ aside .button, aside button.negative, aside .negative.button, aside
   background-color: #bb3355;
 }
 
-/* maybe seperate this out, cssPart ? */
+
+/* COLUMN STUFF */
+.column-row {
+    position: relative; 
+	z-index: 1; 
+	width: 100%;
+}
+
+.column-row .column {
+    position: relative; 
+    float: left; 
+}
+
+.column-row:before, .column-row:after {
+   content: " ";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 33.4%;
+   width: 33.4%;
+   height: 100%;
+}
+
+.column-row:after {
+   left: 66.667%;
+}
+
+/* TWO COL */
+.column-row.two .column {
+	width: 42%; 
+	padding: 3%; 
+}
+
+.column-row.two .column:nth-child(1) { left: 33%; }
+.column-row.two .column:nth-child(2) { left: -33.3%; }
+.column-row.two .column:nth-child(3) { left: 0; }
+
+/* THREE COL */
+
+.column-row.three .column {
+	width: 27%; 
+	padding: 3%; 
+}
+
+.column-row.three .column:nth-child(1) { left: 33%; }
+.column-row.three .column:nth-child(2) { left: -33.3%; }
+.column-row.three .column:nth-child(3) { left: 0; }
+
+/* SEPERATE THIS OUT */
 .home-page h1
 {
     text-align: right;
