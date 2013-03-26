@@ -8,7 +8,7 @@
     var bodyId = Layout.BodyId;
 }
 <!DOCTYPE html> 
-<html lang="@WorkContext.CurrentCulture" class="static @Html.ClassForPage()"> 
+<html lang="@WorkContext.CurrentCulture" class="static @Html.ClassForPage((string)Layout.PageClass)"> 
 <head> 
     <meta charset="utf-8" />
     <title>@Html.Title(siteName, title)</title> 
