@@ -642,8 +642,49 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: right;
 }
 
-.home-page .details .gravatar {
+.home-page .widget-code,
+.home-page .widget-Code
+{
+    float: left;
+    width: 50%;
+}
+
+/* homepage github feed styling */
+.home-page .widget-github .details .gravatar,
+.home-page .widget-Github .details .gravatar  
+{
     display: none;
+}
+
+.home-page .widget-github,
+.home-page .widget-Github
+{
+    float: right;
+    width: 50%;
+}
+
+.home-page .widget-github li,
+.home-page .widget-Github li
+{
+    list-style-type: none;
+    margin-bottom: 10px;
+    border-bottom: 1px;
+    color: #838383
+}
+
+.home-page .widget-github .details .commits .message,
+.home-page .widget-Github .details .commits .message
+{
+    display: inline-block;
+}
+
+.home-page .widget-github .details li img, 
+.home-page .widget-Github .details li img
+{
+    vertical-align: middle;
+    background-color: #fff;
+    margin: 0 1px 0 0;
+    border-radius: 2px;
 }
 
 .grid .item {
@@ -664,7 +705,7 @@ aside .button, aside button.negative, aside .negative.button, aside
     border-bottom: 3px solid #2FC2EF;
 }
 
-.grid .item.tech
+.grid .item.tech, .grid .item.code
 {
     border-bottom: 3px solid #6C138A;
 }
@@ -716,7 +757,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 	background: #2FC2EF; 
 }
 
-.item.tech .caption{
+.item.tech .caption, .item.code .caption {
     background: #6C138A;
 }
 
