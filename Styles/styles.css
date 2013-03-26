@@ -663,7 +663,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .home-page .widget-content p
 {
-    padding: 10px 0;
+    padding: 0 0 10px 0;
 }
 
 .home-page .widget-github,
