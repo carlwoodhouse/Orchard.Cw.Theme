@@ -642,6 +642,10 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: right;
 }
 
+.home-page .details .gravatar {
+    display: none;
+}
+
 .grid .item {
 	width: 181px;
 	height: 181px;

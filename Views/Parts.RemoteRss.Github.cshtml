@@ -1,0 +1,20 @@
+﻿@using System.Text.RegularExpressions
+@{
+    var feed = ((IEnumerable<dynamic>) Model.Feed.Elements("entry"));
+}
+<ul>
+@{
+    var count = 1;
+    
+    foreach(var item in feed)
+    {
+       <li>@Html.Raw(item.Element("content").Value)</li>
+
+        if (count == (int)Model.ItemsToDisplay ) {
+            break;
+        }
+
+        count++;
+    }
+}
+</ul>
