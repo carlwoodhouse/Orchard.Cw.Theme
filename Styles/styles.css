@@ -642,7 +642,7 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: right;
 }
 
-.home-page .widget-life
+.home-page .widget-life, .home-page .widget-everything
 {
     clear: both;
 }
@@ -661,11 +661,17 @@ aside .button, aside button.negative, aside .negative.button, aside
     display: none;
 }
 
+.home-page .widget-content p
+{
+    padding: 10px 0;
+}
+
 .home-page .widget-github,
 .home-page .widget-Github
 {
     float: right;
     width: 50%;
+    margin-top: 58px;
 }
 
 .home-page .widget-github li,
