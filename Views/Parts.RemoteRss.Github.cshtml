@@ -8,7 +8,7 @@
     
     foreach(var item in feed)
     {
-       <li>@Html.Raw(item.Element("content").Value)</li>
+       <li class="github-activity-row">@Html.Raw(item.Element("content").Value)</li>
 
         if (count == (int)Model.ItemsToDisplay ) {
             break;

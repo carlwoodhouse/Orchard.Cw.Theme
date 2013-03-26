@@ -642,6 +642,11 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: right;
 }
 
+.home-page .widget-life
+{
+    clear: both;
+}
+
 .home-page .widget-code,
 .home-page .widget-Code
 {
