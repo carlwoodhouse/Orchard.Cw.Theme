@@ -642,6 +642,10 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: right;
 }
 
+.branding h1 a {
+    font-size: 42px;
+}
+
 .branding h2 
 {
     margin-top: -30px;
