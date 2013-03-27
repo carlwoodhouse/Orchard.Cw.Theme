@@ -772,7 +772,6 @@ aside .button, aside button.negative, aside .negative.button, aside
     clear: both;
 }
 
-
 /* blogs - seperate this out? */
 .blog-post img.alignright
 {
@@ -786,7 +785,7 @@ aside .button, aside button.negative, aside .negative.button, aside
     padding: 10px 10px 10px 0;
 }
 
-.blogpost h2 
+.blogpost h2, .blogpost h3 
 {
     text-align: right;
 }
