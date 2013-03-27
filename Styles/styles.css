@@ -798,21 +798,21 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 
-/* blogs */
+/* blogs - seperate this out? */
 .blog-post img.alignright
 {
     float: right;
-    padding: 10px 10px 10px 0;
+    padding: 10px 0 10px 10px;
 }
 
 .blog-post img.alignleft
 {
     float: left;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 10px 10px 0;
 }
 
-.blog-post .img
+.blogpost h2 
 {
-    float: left;
+    text-align: right;
 }
 
