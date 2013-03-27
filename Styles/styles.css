@@ -636,11 +636,13 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
 
-/* SEPERATE THIS OUT */
-.home-page h1
+/* header */
+.branding h1
 {
     text-align: right;
 }
+
+/* SEPERATE THIS OUT */
 
 .home-page .widget-life, .home-page .widget-everything
 {
