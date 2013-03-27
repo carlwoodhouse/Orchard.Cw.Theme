@@ -1,5 +1,5 @@
 ﻿<Placement>
-    <Place Fields_MediaPicker-FeaturedThumbnail="header:1" />
+    <Place Fields_MediaPicker-FeaturedThumbnail="Header:1" />
     
     <Match Path="/" ContentType="Page">
         <Place Parts_Title="-"/>
