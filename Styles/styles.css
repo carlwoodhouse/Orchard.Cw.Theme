@@ -649,6 +649,10 @@ aside .button, aside button.negative, aside .negative.button, aside
 .branding h1 a { font-size: 42px; }
 .branding h2 { margin-top: -30px; }
 
+#main article header h1 {
+    line-height: 0.8;
+}
+
 /* SEPERATE THIS OUT */
 
 .home-page .widget-life, .home-page .widget-everything { clear: both; }
