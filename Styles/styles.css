@@ -684,9 +684,40 @@ aside .button, aside button.negative, aside .negative.button, aside
 .home-page .widget-Github li {
     list-style-type: none;
     margin-bottom: 10px;
-    border-bottom: 1px;
-    color: #838383
+    color: #838383;
+    background-color: #F3F4F5;
 }
+
+.home-page .widget-github li.github-activity-row,
+.home-page .widget-Github li.github-activity-row  {
+    border-bottom: solid 1px #2FC2EF;
+    margin-bottom: 5px;
+    padding: 3%;
+}
+
+.home-page .widget-github li.github-activity-row .time,
+.home-page .widget-Github li.github-activity-row .time {
+    float: left;
+    width: 20%;
+    height: 70px;
+}
+
+.home-page .widget-github li.github-activity-row .title,
+.home-page .widget-Github li.github-activity-row .title {
+    height: 15px;
+    width: 80%;
+    overflow: hidden;
+}
+
+/*
+.home-page .widget-github li.github-activity-row .time time,
+.home-page .widget-Github li.github-activity-row .time time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+}*/
 
 .home-page .widget-github .details .commits .message,
 .home-page .widget-Github .details .commits .message {
