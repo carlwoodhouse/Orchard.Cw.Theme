@@ -731,7 +731,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 .grid .item {
 	width: 181px;
 	height: 181px;
-	margin: 0 15px 15px 0;
+	margin: 0 13px 13px 0;
 	float: left;
 	overflow:hidden;
 	position:relative;
@@ -760,9 +760,6 @@ aside .button, aside button.negative, aside .negative.button, aside
 	color: #fff;
 	display:none;
 	line-height:1.1;
-	/*-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;*/
 }
 
 .item .caption h2 {
