@@ -467,7 +467,7 @@ aside {
   float: right;
   width: 222.857px;
   padding: 40px 0;
-  background-color: #EEE;
+  /*background-color: #EEE;*/
   border-left: 1px solid #CCC;
   margin-bottom: -5000px;
   padding-bottom: 5000px;
@@ -636,58 +636,48 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
 
+.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #6C138A; }
+.life header.page-header section { border-bottom: 1px solid #2FC2EF; }
+.everything header.page-header section { border-bottom: 1px solid #F78F1E; }
+
+.code aside, .tech aside { border-left: 1px solid #6C138A;} 
+.life aside { border-left: 1px solid #2FC2EF; }
+.everything aside { border-left: 1px solid #F78F1E; }
+
 /* header */
-.branding h1, .branding h2
-{
-    text-align: right;
-}
-
-.branding h1 a {
-    font-size: 42px;
-}
-
-.branding h2 
-{
-    margin-top: -30px;
-}
+.branding h1, .branding h2 { text-align: right; }
+.branding h1 a { font-size: 42px; }
+.branding h2 { margin-top: -30px; }
 
 /* SEPERATE THIS OUT */
 
-.home-page .widget-life, .home-page .widget-everything
-{
-    clear: both;
-}
+.home-page .widget-life, .home-page .widget-everything { clear: both; }
 
 .home-page .widget-code,
-.home-page .widget-Code
-{
+.home-page .widget-Code {
     float: left;
     width: 50%;
 }
 
 /* homepage github feed styling */
 .home-page .widget-github .details .gravatar,
-.home-page .widget-Github .details .gravatar  
-{
+.home-page .widget-Github .details .gravatar {
     display: none;
 }
 
-.home-page .widget-content p
-{
+.home-page .widget-content p {
     padding: 0 0 10px 0;
 }
 
 .home-page .widget-github,
-.home-page .widget-Github
-{
+.home-page .widget-Github {
     float: right;
     width: 50%;
     margin-top: 58px;
 }
 
 .home-page .widget-github li,
-.home-page .widget-Github li
-{
+.home-page .widget-Github li {
     list-style-type: none;
     margin-bottom: 10px;
     border-bottom: 1px;
@@ -695,14 +685,12 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 .home-page .widget-github .details .commits .message,
-.home-page .widget-Github .details .commits .message
-{
+.home-page .widget-Github .details .commits .message {
     display: inline-block;
 }
 
 .home-page .widget-github .details li img, 
-.home-page .widget-Github .details li img
-{
+.home-page .widget-Github .details li img {
     vertical-align: middle;
     background-color: #fff;
     margin: 0 1px 0 0;
@@ -714,33 +702,16 @@ aside .button, aside button.negative, aside .negative.button, aside
 	height: 181px;
 	margin: 0 18px 18px 0;
 	float: left;
-	/*-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;*/
 	overflow:hidden;
 	position:relative;
 	cursor:default;
 }
 
-.grid .item.life
-{
-    border-bottom: 3px solid #2FC2EF;
-}
-
-.grid .item.tech, .grid .item.code
-{
-    border-bottom: 3px solid #6C138A;
-}
-
-.grid .item.everything
-{
-    border-bottom: 3px solid #F78F1E;
-}
+.grid .item.life { border-bottom: 3px solid #2FC2EF; }
+.grid .item.tech, .grid .item.code { border-bottom: 3px solid #6C138A; }
+.grid .item.everything { border-bottom: 3px solid #F78F1E; }
 
 .grid img {
-	/*-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;*/
 	border:0;
 	position:absolute;
 }
