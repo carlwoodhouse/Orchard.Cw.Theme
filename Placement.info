@@ -1,5 +1,5 @@
 ﻿<Placement>
-    <Match Path="/" ContentType="BlogPost" DisplayType="Detail">
+    <Match ContentType="BlogPost" DisplayType="Detail">
         <Place Fields_MediaPicker-FeaturedThumbnail="-" />
         <Place Fields_Input-FeaturedThumbnailCaption="-" />
     </Match>
