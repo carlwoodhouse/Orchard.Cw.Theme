@@ -401,7 +401,7 @@ p {
 }
 
 section {
-  width: 920px;
+  width: 960px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -431,7 +431,7 @@ footer {
 }
 
 #main-footer section {
-	width: 920px;
+	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
     margin-bottom: 0;
@@ -690,9 +690,15 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .home-page .widget-github li.github-activity-row,
 .home-page .widget-Github li.github-activity-row  {
-    border-bottom: solid 1px #2FC2EF;
-    margin-bottom: 5px;
+    border-bottom: solid 1px #6C138A;
     padding: 3%;
+}
+
+.home-page .widget-github li.github-activity-row:hover,
+.home-page .widget-Github li.github-activity-row:hover  
+{
+    color: #fff;
+    background-color: #6C138A;
 }
 
 .home-page .widget-github li.github-activity-row .time,
@@ -708,16 +714,6 @@ aside .button, aside button.negative, aside .negative.button, aside
     width: 80%;
     overflow: hidden;
 }
-
-/*
-.home-page .widget-github li.github-activity-row .time time,
-.home-page .widget-Github li.github-activity-row .time time {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 30%;
-    width: 50%;
-}*/
 
 .home-page .widget-github .details .commits .message,
 .home-page .widget-Github .details .commits .message {
@@ -735,12 +731,14 @@ aside .button, aside button.negative, aside .negative.button, aside
 .grid .item {
 	width: 181px;
 	height: 181px;
-	margin: 0 18px 18px 0;
+	margin: 0 15px 15px 0;
 	float: left;
 	overflow:hidden;
 	position:relative;
 	cursor:default;
 }
+
+.grid .item:nth-child(5n+5) { margin-right: 0; }
 
 .grid .item.life { border-bottom: 3px solid #2FC2EF; }
 .grid .item.tech, .grid .item.code { border-bottom: 3px solid #6C138A; }
