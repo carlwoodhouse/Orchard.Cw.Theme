@@ -637,9 +637,14 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(3) { left: 0; }
 
 /* header */
-.branding h1
+.branding h1, .branding h2
 {
     text-align: right;
+}
+
+.branding h2 
+{
+    margin-top: -30px;
 }
 
 /* SEPERATE THIS OUT */
