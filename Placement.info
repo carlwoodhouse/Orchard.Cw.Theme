@@ -1,5 +1,8 @@
 ﻿<Placement>
-    <Place Fields_MediaPicker-FeaturedThumbnail="Header:1" />
+    <Match Path="/" ContentType="BlogPost" DisplayType="Detail">
+        <Place Fields_MediaPicker-FeaturedThumbnail="-" />
+        <Place Fields_Input-FeaturedThumbnailCaption="-" />
+    </Match>
     
     <Match Path="/" ContentType="Page">
         <Place Parts_Title="-"/>
