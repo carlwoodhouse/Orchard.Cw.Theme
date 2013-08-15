@@ -705,6 +705,13 @@ aside .button, aside button.negative, aside .negative.button, aside
     padding: 2px 3%;
 }
 
+.home-page .widget-github li.github-activity-row-header img,
+.home-page .widget-Github li.github-activity-row-header img 
+{
+	float: left;
+	padding: 5px 5px 0px 5px;
+}
+
 .home-page .widget-github li.github-activity-row,
 .home-page .widget-Github li.github-activity-row  {
     border-bottom: solid 1px #6C138A;
