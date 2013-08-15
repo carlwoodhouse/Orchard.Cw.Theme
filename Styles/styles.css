@@ -638,13 +638,18 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
 
-.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #6C138A; }
+.code header.page-header section, .tech header.page-header section, .code header.page-header section,  { border-bottom: 1px solid #6C138A; }
 .life header.page-header section { border-bottom: 1px solid #2FC2EF; }
 .everything header.page-header section { border-bottom: 1px solid #F78F1E; }
 
 .code aside, .tech aside { border-left: 1px solid #6C138A;} 
 .life aside { border-left: 1px solid #2FC2EF; }
 .everything aside { border-left: 1px solid #F78F1E; }
+
+.code #main-footer section, .tech  #main-footer section { border-top: 1px solid #6C138A;} 
+.life  #main-footer section { border-top: 1px solid #2FC2EF; }
+.everything  #main-footer section { border-top: 1px solid #F78F1E; }
+
 
 /* header */
 .branding h1, .branding h2 { text-align: right; }
