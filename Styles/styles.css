@@ -699,6 +699,12 @@ aside .button, aside button.negative, aside .negative.button, aside
     background-color: #F3F4F5;
 }
 
+.home-page .widget-github li.github-activity-row-header,
+.home-page .widget-Github li.github-activity-row-header {
+    border-bottom: solid 1px #6C138A;
+    padding: 2px 3%;
+}
+
 .home-page .widget-github li.github-activity-row,
 .home-page .widget-Github li.github-activity-row  {
     border-bottom: solid 1px #6C138A;
