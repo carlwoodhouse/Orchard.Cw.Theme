@@ -656,7 +656,12 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 /* SEPERATE THIS OUT */
-.home-page .widget-life, .home-page .widget-everything { clear: both; padding-top: 50px; }
+.home-page .widget-life, .home-page .widget-everything 
+{ 
+	clear: both; 
+	padding-top: 25px; 
+	border-top: 1px solid #CCC;
+}
 
 .home-page .widget-code,
 .home-page .widget-Code {
