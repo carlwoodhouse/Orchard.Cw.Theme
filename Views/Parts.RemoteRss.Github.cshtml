@@ -3,18 +3,18 @@
 }
 
 <ul>
-@{
-    var count = 1;
-    
-    foreach(var item in feed)
-    {
-       <li class="github-activity-row">@Html.Raw(item.Element("content").Value)</li>
+	<li class="github-activity-row row-header"><h4>Github Activity<h4></li>
+	@{
+		var count = 1;
+		foreach(var item in feed)
+		{
+		   <li class="github-activity-row">@Html.Raw(item.Element("content").Value)</li>
 
-        if (count == (int)Model.ItemsToDisplay ) {
-            break;
-        }
+			if (count == (int)Model.ItemsToDisplay ) {
+				break;
+			}
 
-        count++;
-    }
-}
+			count++;
+		}
+	}
 </ul>
