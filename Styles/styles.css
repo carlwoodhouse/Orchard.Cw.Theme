@@ -664,8 +664,8 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 /* homepage github feed styling */
-.home-page .widget-github .details .gravatar,
-.home-page .widget-Github .details .gravatar {
+.home-page .widget-github .details, .home-page .widget-Github .details,
+.home-page .widget-github li.github-activity-row .time, .home-page .widget-Github li.github-activity-row .time {
     display: none;
 }
 
@@ -701,13 +701,6 @@ aside .button, aside button.negative, aside .negative.button, aside
     background-color: #6C138A;
 }
 
-.home-page .widget-github li.github-activity-row .time,
-.home-page .widget-Github li.github-activity-row .time {
-    float: left;
-    width: 20%;
-    height: 70px;
-}
-
 .home-page .widget-github li.github-activity-row .title,
 .home-page .widget-Github li.github-activity-row .title {
     height: 15px;
@@ -718,14 +711,6 @@ aside .button, aside button.negative, aside .negative.button, aside
 .home-page .widget-github .details .commits .message,
 .home-page .widget-Github .details .commits .message {
     display: inline-block;
-}
-
-.home-page .widget-github .details li img, 
-.home-page .widget-Github .details li img {
-    vertical-align: middle;
-    background-color: #fff;
-    margin: 0 1px 0 0;
-    border-radius: 2px;
 }
 
 .grid .item {
