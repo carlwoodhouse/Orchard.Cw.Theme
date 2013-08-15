@@ -3,7 +3,7 @@
 }
 
 <ul>
-	<li class="github-activity-row-header"><img src="@Html.ThemePath(WorkContext.CurrentTheme, "/img/github-mark-32.png")" alt="github logo" /><h4>Github Activity<h4></li>
+	<li class="github-activity-row-header"><img src="@Url.Content(Html.ThemePath(WorkContext.CurrentTheme, "/img/github-mark-32.png"))" alt="github logo" /><h4>Github Activity<h4></li>
 	@{
 		var count = 1;
 		foreach(var item in feed)
