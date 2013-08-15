@@ -638,7 +638,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
 
-.code header.page-header section, .tech header.page-header section, .code header.page-header section,  { border-bottom: 1px solid #6C138A; }
+.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #6C138A; }
 .life header.page-header section { border-bottom: 1px solid #2FC2EF; }
 .everything header.page-header section { border-bottom: 1px solid #F78F1E; }
 
