@@ -332,7 +332,7 @@ h3 {
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 22px;
   font-weight: 300;
   text-transform:lowercase;
 }
@@ -656,7 +656,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 /* SEPERATE THIS OUT */
-.home-page .widget-life, .home-page .widget-everything { clear: both; }
+.home-page .widget-life, .home-page .widget-everything { clear: both; padding-top: 50px; }
 
 .home-page .widget-code,
 .home-page .widget-Code {
