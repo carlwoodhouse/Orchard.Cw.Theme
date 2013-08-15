@@ -694,7 +694,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 .home-page .widget-github li,
 .home-page .widget-Github li {
     list-style-type: none;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #838383;
     background-color: #F3F4F5;
 }
