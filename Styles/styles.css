@@ -468,7 +468,7 @@ aside {
   *display: inline;
   float: right;
   width: 222.857px;
-  padding: 40px 0;
+  padding: 0 20px;
   /*background-color: #EEE;*/
   border-left: 1px solid #CCC;
   margin-bottom: -5000px;
