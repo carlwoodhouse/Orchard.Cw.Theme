@@ -439,6 +439,12 @@ footer {
     margin-bottom: 0;
 }
 
+#main-footer ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
 #main-footer section .column-row 
 {
     width: 50%;
