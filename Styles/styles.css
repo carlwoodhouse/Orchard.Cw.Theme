@@ -440,9 +440,10 @@ footer {
 }
 
 #main-footer ul li {
-    display: inline-block;
+    display: inline;
     list-style-type: none;
-    padding-left: 40px;
+    padding: 5px 0px 5px 40px;
+    height: 34px;
 }
 
 #main-footer section .column-row 
