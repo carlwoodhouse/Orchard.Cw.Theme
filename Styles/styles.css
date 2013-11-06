@@ -531,8 +531,8 @@ h1 a.before, h2 a.before, h3 a.before, h4 a.before, h5 a.before {
   margin-right: 20px;
 }
 
-a {
-  color: blue;
+a, a:active, a:hover, a:visited {
+  color: #019875;
 }
 
 form fieldset {
@@ -653,16 +653,16 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
 
-.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #6C138A; }
-.life header.page-header section { border-bottom: 1px solid #2FC2EF; }
+.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #2FC2EF; }
+.life header.page-header section { border-bottom: 1px solid #019875; }
 .everything header.page-header section { border-bottom: 1px solid #F78F1E; }
 
-.code aside, .tech aside { border-left: 1px solid #6C138A;} 
-.life aside { border-left: 1px solid #2FC2EF; }
+.code aside, .tech aside { border-left: 1px solid #2FC2EF;} 
+.life aside { border-left: 1px solid #019875; }
 .everything aside { border-left: 1px solid #F78F1E; }
 
-.code #main-footer section, .tech  #main-footer section { border-top: 1px solid #6C138A;} 
-.life  #main-footer section { border-top: 1px solid #2FC2EF; }
+.code #main-footer section, .tech  #main-footer section { border-top: 1px solid #2FC2EF;} 
+.life  #main-footer section { border-top: 1px solid #019875; }
 .everything  #main-footer section { border-top: 1px solid #F78F1E; }
 
 
@@ -716,7 +716,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .home-page .widget-github li.github-activity-row-header,
 .home-page .widget-Github li.github-activity-row-header {
-    border-bottom: solid 1px #6C138A;
+    border-bottom: solid 1px #2FC2EF;
     padding: 2px 3%;
 }
 
@@ -729,7 +729,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .home-page .widget-github li.github-activity-row,
 .home-page .widget-Github li.github-activity-row  {
-    border-bottom: solid 1px #6C138A;
+    border-bottom: solid 1px #2FC2EF;
     padding: 3%;
 }
 
@@ -737,7 +737,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 .home-page .widget-Github li.github-activity-row:hover  
 {
     color: #fff;
-    background-color: #6C138A;
+    background-color: #2FC2EF;
 }
 
 .home-page .widget-github li.github-activity-row .title,
@@ -764,8 +764,8 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .grid .item:nth-child(5n+5) { margin-right: 0; }
 
-.grid .item.life { border-bottom: 3px solid #2FC2EF; }
-.grid .item.tech, .grid .item.code { border-bottom: 3px solid #6C138A; }
+.grid .item.life { border-bottom: 3px solid #019875; }
+.grid .item.tech, .grid .item.code { border-bottom: 3px solid #2FC2EF; }
 .grid .item.everything { border-bottom: 3px solid #F78F1E; }
 
 .grid img {
@@ -801,11 +801,11 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 .item.life .caption {
-	background: #2FC2EF; 
+	background: #019875; 
 }
 
 .item.tech .caption, .item.code .caption {
-    background: #6C138A;
+    background: #2FC2EF;
 }
 
 .item.everything .caption{
