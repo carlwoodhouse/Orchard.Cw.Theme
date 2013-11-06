@@ -4,6 +4,7 @@
         Layout.Title = Model.Title;
     }
 
+    Style.Include("posts.css");
     var pageClass = (string) Model.ContentItem.BlogPostPart.Category.Value;
     var thumbnail = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnail.Url;
     var thumbnailCaption = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnailCaption.Value;

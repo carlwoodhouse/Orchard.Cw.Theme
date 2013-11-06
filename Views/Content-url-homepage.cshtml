@@ -3,7 +3,8 @@
     if (Model.Title != null) {
         Layout.Title = Model.Title;
     }
-    
+
+    Style.Include("homepage.css");
 	Layout.PageClass = "home-page";
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
 }

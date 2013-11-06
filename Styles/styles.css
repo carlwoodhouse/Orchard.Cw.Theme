@@ -648,75 +648,7 @@ aside .button, aside button.negative, aside .negative.button, aside
     line-height: 0.8;
 }
 
-/* SEPERATE THIS OUT */
-.home-page .widget-life, .home-page .widget-everything 
-{ 
-	clear: both; 
-	padding-top: 25px; 
-	border-top: 1px solid #019875;
-}
 
-.home-page .widget-code,
-.home-page .widget-Code {
-    float: left;
-    width: 50%;
-}
-
-/* homepage github feed styling */
-.home-page .widget-github .details, .home-page .widget-Github .details,
-.home-page .widget-github li.github-activity-row .time, .home-page .widget-Github li.github-activity-row .time {
-    display: none;
-}
-
-.home-page .widget-content p {
-    padding: 0 0 10px 0;
-}
-
-.home-page .widget-github,
-.home-page .widget-Github {
-    float: right;
-    width: 50%;
-    margin-top: 58px;
-}
-
-.home-page .widget-github li,
-.home-page .widget-Github li {
-    list-style-type: none;
-    margin-bottom: 2px;
-    color: #838383;
-    background-color: #F3F4F5;
-}
-
-.home-page .widget-github li.github-activity-row-header,
-.home-page .widget-Github li.github-activity-row-header {
-    border-bottom: solid 1px #91C2C0;
-    padding-left: 40px;
-}
-
-.home-page .widget-github li.github-activity-row,
-.home-page .widget-Github li.github-activity-row  {
-    border-bottom: solid 1px #91C2C0;
-    padding: 3%;
-}
-
-.home-page .widget-github li.github-activity-row:hover,
-.home-page .widget-Github li.github-activity-row:hover  
-{
-    color: #fff;
-    background-color: #91C2C0;
-}
-
-.home-page .widget-github li.github-activity-row .title,
-.home-page .widget-Github li.github-activity-row .title {
-    height: 15px;
-    width: 80%;
-    overflow: hidden;
-}
-
-.home-page .widget-github .details .commits .message,
-.home-page .widget-Github .details .commits .message {
-    display: inline-block;
-}
 
 .grid .item {
 	width: 181px;
@@ -788,21 +720,4 @@ aside .button, aside button.negative, aside .negative.button, aside
     clear: both;
 }
 
-/* blogs - seperate this out? */
-.blog-post img.alignright
-{
-    float: right;
-    padding: 10px 0 10px 10px;
-}
-
-.blog-post img.alignleft
-{
-    float: left;
-    padding: 10px 10px 10px 0;
-}
-
-.blog-post h2, .blog-post h3 
-{
-    text-align: right;
-}
 
