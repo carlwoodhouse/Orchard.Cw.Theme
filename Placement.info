@@ -8,4 +8,8 @@
     <Match Path="/" ContentType="Page">
         <Place Parts_Title="-"/>
     </Match>
+
+    <Match Path="/" ContentType="Page" DisplayType="Detail">
+        <Place Parts_Title="-"/>
+    </Match>
 </Placement>
