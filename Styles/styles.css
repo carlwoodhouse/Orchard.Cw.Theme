@@ -737,14 +737,7 @@ end column stuff - can col crap be removed? */
 .home-page .widget-github li.github-activity-row-header,
 .home-page .widget-Github li.github-activity-row-header {
     border-bottom: solid 1px #91C2C0;
-    padding: 2px 3%;
-}
-
-.home-page .widget-github li.github-activity-row-header img,
-.home-page .widget-Github li.github-activity-row-header img 
-{
-	float: left;
-	padding: 5px 5px 0px 5px;
+    padding-left: 40px;
 }
 
 .home-page .widget-github li.github-activity-row,
