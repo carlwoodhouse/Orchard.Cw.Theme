@@ -722,14 +722,14 @@ aside .button, aside button.negative, aside .negative.button, aside
 .left { float: left; }
 .right { float: right; }
 
-.widget-recent-blog-posts ul li {
+.widget-recent-blog-posts ul li 
+{
+    display: inline;
     list-style-type: none;
     margin-left: 0;
-    padding-top: 5px;
     height: 50px;
-    border-bottom: 1px solid #CCC;
 }
 
-.widget-recent-blog-posts ul li img.right {
-    padding-left: 10px;
+.widget-recent-blog-posts ul li img.left {
+    padding: 2px;
 }

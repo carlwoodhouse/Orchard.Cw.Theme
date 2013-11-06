@@ -11,8 +11,7 @@
         {
             var blogPostPart = post.ContentItem.BlogPostPart;
             <li>
-                <img class="right" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/>
-                <a href="">@blogPostPart.Title</a>
+                <a href=""><img class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/></a>
             </li>
        
             count++;
