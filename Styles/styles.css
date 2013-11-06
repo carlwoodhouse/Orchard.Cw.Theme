@@ -444,6 +444,7 @@ footer {
 #main-footer ul li {
     display: inline;
     list-style-type: none;
+    margin-left: 1em;
     padding: 10px 0px 10px 40px;
 }
 
@@ -625,54 +626,6 @@ aside .button, aside button.negative, aside .negative.button, aside
   background-color: #bb3355;
 }
 
-
-/* COLUMN STUFF 
-.column-row {
-    position: relative; 
-	z-index: 1; 
-	width: 100%;
-}
-
-.column-row .column {
-    position: relative; 
-    float: left; 
-}
-
-.column-row:before, .column-row:after {
-   content: " ";
-   position: absolute;
-   z-index: -1;
-   top: 0;
-   left: 33.4%;
-   width: 33.4%;
-   height: 100%;
-}
-
-.column-row:after {
-   left: 66.667%;
-}
-
-.column-row.two .column {
-	width: 42%; 
-	padding: 3%; 
-}
-
-.column-row.two .column:nth-child(1) { left: 33%; }
-.column-row.two .column:nth-child(2) { left: -33.3%; }
-.column-row.two .column:nth-child(3) { left: 0; }
-
-
-.column-row.three .column {
-	width: 27%; 
-	padding: 3%; 
-}
-
-.column-row.three .column:nth-child(1) { left: 33%; }
-.column-row.three .column:nth-child(2) { left: -33.3%; }
-.column-row.three .column:nth-child(3) { left: 0; }
-
-end column stuff - can col crap be removed? */
-
 .code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #91C2C0; }
 .life header.page-header section { border-bottom: 1px solid #019875; }
 .everything header.page-header section { border-bottom: 1px solid #A6C0C5; }
@@ -729,7 +682,7 @@ end column stuff - can col crap be removed? */
 .home-page .widget-github li,
 .home-page .widget-Github li {
     list-style-type: none;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     color: #838383;
     background-color: #F3F4F5;
 }
