@@ -426,7 +426,7 @@ footer {
 }
 
 #main-footer {
-	height: 200px;
+	height: 80px;
     margin-top: 0;
     padding-top: 0;
 }
@@ -440,23 +440,43 @@ footer {
     padding-top: 20px;
 }
 
+
 #main-footer ul li {
     display: inline;
     list-style-type: none;
     padding: 10px 0px 10px 40px;
 }
 
-#main-footer section .column-row 
-{
-    width: 50%;
-}
-
-li.facebook {
+li.ico-facebook {
     background: url('../img/social/32x32px/facebook.png') no-repeat top left;
 }
 
-li.twitter {
+li.ico-twitter {
     background: url('../img/social/32x32px/twitter.png') no-repeat top left;
+}
+
+li.ico-linkedin {
+    background: url('../img/social/32x32px/linkedin.png') no-repeat top left;
+}
+
+li.ico-github {
+    background: url('../img/social/32x32px/github.png') no-repeat top left;
+}
+
+li.ico-instagram {
+    background: url('../img/social/32x32px/instagram.png') no-repeat top left;
+}
+
+li.ico-lastfm {
+    background: url('../img/social/32x32px/lastfm.png') no-repeat top left;
+}
+
+li.ico-youtube {
+    background: url('../img/social/32x32px/youtube.png') no-repeat top left;
+}
+
+li.ico-vimeo {
+    background: url('../img/social/32x32px/vimeo.png') no-repeat top left;
 }
 
 #main {
@@ -606,7 +626,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 
-/* COLUMN STUFF */
+/* COLUMN STUFF 
 .column-row {
     position: relative; 
 	z-index: 1; 
@@ -632,7 +652,6 @@ aside .button, aside button.negative, aside .negative.button, aside
    left: 66.667%;
 }
 
-/* TWO COL */
 .column-row.two .column {
 	width: 42%; 
 	padding: 3%; 
@@ -642,7 +661,6 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.two .column:nth-child(2) { left: -33.3%; }
 .column-row.two .column:nth-child(3) { left: 0; }
 
-/* THREE COL */
 
 .column-row.three .column {
 	width: 27%; 
@@ -652,6 +670,8 @@ aside .button, aside button.negative, aside .negative.button, aside
 .column-row.three .column:nth-child(1) { left: 33%; }
 .column-row.three .column:nth-child(2) { left: -33.3%; }
 .column-row.three .column:nth-child(3) { left: 0; }
+
+end column stuff - can col crap be removed? */
 
 .code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #91C2C0; }
 .life header.page-header section { border-bottom: 1px solid #019875; }
