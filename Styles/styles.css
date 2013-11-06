@@ -729,10 +729,6 @@ aside .button, aside button.negative, aside .negative.button, aside
     height: 50px;
 }
 
-.widget-recent-blog-posts ul li img.left {
-    padding-right: 10px;
-}
-
-.widget-recent-blog-posts ul li img.left {
+.widget-recent-blog-posts ul li img.right {
     padding-left: 10px;
 }
