@@ -722,3 +722,5 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 
+.left { float: left; }
+.right { float: right; }

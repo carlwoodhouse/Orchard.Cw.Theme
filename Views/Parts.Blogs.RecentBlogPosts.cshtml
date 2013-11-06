@@ -1,0 +1,25 @@
+﻿
+@{
+    IEnumerable<object> posts =
+        Model.ContentItems.ContentItems;
+}
+
+<ul>
+    @{
+        var count = 0;
+        foreach (dynamic post in posts)
+        {
+            var blogPostPart = post.ContentItem.BlogPostPart;
+
+            if (count % 2 == 0)
+            {
+                <li><img class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/><a href="">@blogPostPart.Title</a></li>
+            }
+            else
+            {
+                <li><a class="left" href="">@blogPostPart.Title</a><img width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/></li>
+            }
+            count++;
+        }
+    }
+</ul>

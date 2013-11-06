@@ -4,12 +4,9 @@
         <Place Fields_Input-FeaturedThumbnailCaption="-" />
         <Place Fields_Enumeration-Category="-" />
     </Match>
-    
-    <Match Path="/" ContentType="Page">
-        <Place Parts_Title="-"/>
-    </Match>
 
     <Match Path="/" ContentType="Page" DisplayType="Detail">
         <Place Parts_Title="-"/>
+        <Place Parts_Common_MetaData=""/>
     </Match>
 </Placement>
