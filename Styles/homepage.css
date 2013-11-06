@@ -41,6 +41,11 @@
     padding-left: 40px;
 }
 
+.home-page .widget-github li.github-activity-row-header.ico-github,
+.home-page .widget-Github li.github-activity-row-header.ico-github {
+    background-position: 3px 3px;
+}
+
 .home-page .widget-github li.github-activity-row,
 .home-page .widget-Github li.github-activity-row  {
     border-bottom: solid 1px #91C2C0;
