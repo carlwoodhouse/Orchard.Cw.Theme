@@ -725,8 +725,9 @@ aside .button, aside button.negative, aside .negative.button, aside
 .widget-recent-blog-posts ul li {
     list-style-type: none;
     margin-left: 0;
-    padding: 10px 0px 10px 0px;
+    padding-top: 5px;
     height: 50px;
+    border-bottom: 1px solid #CCC;
 }
 
 .widget-recent-blog-posts ul li img.right {
