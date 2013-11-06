@@ -411,7 +411,7 @@ section {
 }
 
 header.page-header section {
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid #019875;
 }
 
 header.page-header a
@@ -432,7 +432,7 @@ footer {
 }
 
 #main-footer section {
-	border-top: 1px solid #CCC;
+	border-top: 1px solid #019875;
 	width: 960px;
 	margin-left: auto;
 	margin-right: auto;
@@ -485,7 +485,7 @@ aside {
   width: 222.857px;
   padding: 0 20px;
   /*background-color: #EEE;*/
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #019875;
   margin-bottom: -5000px;
   padding-bottom: 5000px;
 }
@@ -680,7 +680,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 { 
 	clear: both; 
 	padding-top: 25px; 
-	border-top: 1px solid #CCC;
+	border-top: 1px solid #019875;
 }
 
 .home-page .widget-code,
