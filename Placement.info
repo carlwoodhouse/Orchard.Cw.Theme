@@ -2,6 +2,7 @@
     <Match ContentType="BlogPost" DisplayType="Detail">
         <Place Fields_MediaPicker-FeaturedThumbnail="-" />
         <Place Fields_Input-FeaturedThumbnailCaption="-" />
+        <Place Fields_Enumeration-Category="-" />
     </Match>
     
     <Match Path="/" ContentType="Page">
