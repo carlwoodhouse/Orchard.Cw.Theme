@@ -1,7 +1,6 @@
 ﻿
 $(document).ready(function () {
     // grid
-
     var zoom = 1.2;
     var move = -20;
     //On mouse over those thumbnail
@@ -24,4 +23,6 @@ $(document).ready(function () {
             //Hide the caption
             $(this).find('div.caption').stop(false, true).fadeOut(200);
         });
+
+    $('.widget-recent-blog-posts ul li a').tooltip();
 });
