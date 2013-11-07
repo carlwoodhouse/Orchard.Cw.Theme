@@ -14,11 +14,6 @@
         <title>@fullTitle</title> 
         @Display(Model.Head)
         <script>        (function (d) { d.className = "dyn" + d.className.substring(6, d.className.length); })(document.documentElement);</script> 
-    </head> 
-    <body id="@bodyId">
-        @Display(Model.Body)
-        @Display(Model.Tail)
-
         <script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-22074952-2']);
@@ -31,5 +26,9 @@
             })();
 
         </script>
+    </head>
+    <body id="@bodyId">
+        @Display(Model.Body)
+        @Display(Model.Tail)
     </body>
 </html>
