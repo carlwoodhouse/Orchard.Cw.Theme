@@ -3,6 +3,25 @@
 @{
     IEnumerable<object> posts =
         Model.ContentItems.ContentItems;
+
+    Script.Include("jquery.qtip.min.js").AtFoot();
+    Style.Include("jquery.qtip.min.js").AtFoot();
+}
+
+@using(Script.Foot())
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-tooltip!=""]').qtip({
+                content: {
+                    attr: 'data-tooltip'
+                },
+                style: {
+                    classes: 'qtip-rounded qtip-shadow qtip-tipsy'
+                }
+            });
+        });
+    </script>
 }
 
 <ul>
@@ -12,7 +31,7 @@
         {
             var blogPostPart = post.ContentItem.BlogPostPart;
             <li>
-                <a href="@Url.ItemDisplayUrl((ContentItem)post.ContentItem)"><img class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/></a>
+                <a data-tooltip="@blogPostPart.Title" href="@Url.ItemDisplayUrl((ContentItem)post.ContentItem)"><img class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/></a>
             </li>
        
             count++;
