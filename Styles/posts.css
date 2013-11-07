@@ -11,3 +11,10 @@
     padding: 10px 10px 10px 0;
 }
 
+.content-item.blog-post p.tags {
+    padding: 0px;
+}
+
+.content-item.blog-post p {
+    padding-bottom: 20px
+}
