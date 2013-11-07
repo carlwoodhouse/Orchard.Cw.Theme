@@ -4,7 +4,7 @@ $(document).ready(function () {
     var zoom = 1.2;
     var move = -20;
     //On mouse over those thumbnail
-    $('.grid .item .rollable').hover(function () {
+    $('.grid .item.rollable').hover(function () {
 
         //Set the width and height according to the zoom percentage
         width = $('.item').width() * zoom;
