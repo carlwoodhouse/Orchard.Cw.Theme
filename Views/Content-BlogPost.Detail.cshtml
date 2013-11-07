@@ -7,7 +7,6 @@
     Style.Include("posts.css");
     var pageClass = (string) Model.ContentItem.BlogPostPart.Category.Value;
     var thumbnail = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnail.Url;
-    var thumbnailCaption = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnailCaption.Value;
     Layout.PageClass = !string.IsNullOrWhiteSpace(pageClass) ? pageClass.ToLower() : string.Empty;
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
 }
@@ -16,9 +15,6 @@
         <div class="grid">
             <div class="item @pageClass">
                 <img width="181" height="181" src="@Url.Content(thumbnail)" alt="" title="" />
-                <div class="caption" style="display: none;">
-                    <p>@thumbnailCaption</p>
-                </div>
             </div>
         </div>
         @Display(Model.Header)

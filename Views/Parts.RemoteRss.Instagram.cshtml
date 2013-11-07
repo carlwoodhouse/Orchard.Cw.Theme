@@ -9,7 +9,7 @@
     foreach(var item in feed)
     {
         var imageSrc = Regex.Match(item.Element("description").Value, "<img.*?src=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[1].Value;
-        <div class="item life">
+        <div class="item life rollable">
 			<img width="181" height="181" src="@imageSrc" alt="" title="" />
 			<div class="caption" style="display: none;">
 				<p>@item.Element("title").Value</p>
