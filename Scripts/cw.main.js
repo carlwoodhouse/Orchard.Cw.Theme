@@ -23,4 +23,14 @@ $(document).ready(function () {
             //Hide the caption
             $(this).find('div.caption').stop(false, true).fadeOut(200);
         });
+
+    if ($('.strava-widget').length > 0) {
+        $.ajax({
+            url: 'http://www.strava.com/athletes/1535191/latest-rides/4509dc61116eb2747b6b0bf0d5caa0ec3f4bb229',
+            success: function (data) {
+                var stravaHtml = $(data);
+                $('.strava-widget').html(stravaHtml.find('.content').html());
+            }
+        });
+    }
 });
