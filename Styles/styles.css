@@ -743,8 +743,16 @@ aside .button, aside button.negative, aside .negative.button, aside
     height: 25px;
 }
 
+.view-more:hover {
+    color: #019875;
+}
+
 .view-more a, .view-more a:active, .view-more a:visited 
 {
     text-decoration: none;
-    color: #838383
+    color: #fff
+}
+
+.view-more a:hover {
+    text-decoration: underline;
 }
