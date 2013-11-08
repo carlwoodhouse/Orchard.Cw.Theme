@@ -345,16 +345,15 @@ h6 {
   font-weight: normal;
 }
 
-a {
-  color: #1e2022;
+a, a:visited, a:active {
+    color: #019875;
+    text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-a:visited, a:active {
-  color: #1e2022;
+a:hover 
+{
+    color: #019875;
+    text-decoration: underline;
 }
 
 p a, p strong, p span, p em {
@@ -551,10 +550,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 h1 a.before, h2 a.before, h3 a.before, h4 a.before, h5 a.before {
   margin-left: 0;
   margin-right: 20px;
-}
-
-a, a:active, a:hover, a:visited {
-  color: #019875;
 }
 
 form fieldset {
