@@ -734,3 +734,13 @@ aside .button, aside button.negative, aside .negative.button, aside
 .widget-recent-blog-posts ul li img.left {
     padding: 2px;
 }
+
+.view-more {
+    -webkit-border-radius: 15px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-radius: 15px;
+    -moz-border-radius-topright: 10px;
+    border-radius: 15px;
+    border-top-right-radius: 10px;
+    padding-left: 40px;
+}
