@@ -82,7 +82,7 @@
     background-color: #A6C0C5;
 }
 
-.home-page .intro {
+.home-page .intro, .home-page .intro a {
     line-height: 0.9;
     font-size: 22px;
     font-weight: 300;
