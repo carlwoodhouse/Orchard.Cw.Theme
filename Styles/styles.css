@@ -736,11 +736,15 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 .view-more {
-    -webkit-border-radius: 15px;
-    -webkit-border-top-right-radius: 10px;
-    -moz-border-radius: 15px;
-    -moz-border-radius-topright: 10px;
-    border-radius: 15px;
-    border-top-right-radius: 10px;
-    padding-left: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 7px 20px 0px 40px;
+    height: 25px;
+}
+
+.view-more a, .view-more a:active, .view-more a:visited 
+{
+    text-decoration: none;
+    color: #838383
 }
