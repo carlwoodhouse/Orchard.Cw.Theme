@@ -744,7 +744,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 .view-more:hover {
-    color: #019875;
+    background-color: #019875;
 }
 
 .view-more a, .view-more a:active, .view-more a:visited 
