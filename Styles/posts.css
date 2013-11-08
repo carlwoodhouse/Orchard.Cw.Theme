@@ -1,11 +1,11 @@
 ﻿
-.blog-post img.alignright
+.blog-post .alignright
 {
     float: right;
     padding: 10px 0 10px 10px;
 }
 
-.blog-post img.alignleft
+.blog-post .alignleft
 {
     float: left;
     padding: 10px 10px 10px 0;
