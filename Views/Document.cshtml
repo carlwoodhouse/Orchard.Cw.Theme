@@ -4,7 +4,7 @@
     Script.Include("html5.js").UseCondition("lt IE 9").AtHead();
 
     string title =  Convert.ToString(Model.Title);
-    var fullTitle = string.Concat(title, !string.IsNullOrEmpty(title) ? " | " : string.Empty, "code, life & everything | carlwoodhouse.com");
+    var fullTitle = string.Concat(title, !string.IsNullOrEmpty(title) ? " | " : string.Empty, "code, bikes & everything | carlwoodhouse.com").ToLower();
     var bodyId = Layout.BodyId;
 }
 <!DOCTYPE html> 

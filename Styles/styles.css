@@ -627,16 +627,16 @@ aside .button, aside button.negative, aside .negative.button, aside
   background-color: #bb3355;
 }
 
-.code header.page-header section, .tech header.page-header section { border-bottom: 1px solid #91C2C0; }
-.life header.page-header section { border-bottom: 1px solid #019875; }
+.code header.page-header section, .code header.page-header section { border-bottom: 1px solid #91C2C0; }
+.bike header.page-header section { border-bottom: 1px solid #019875; }
 .everything header.page-header section { border-bottom: 1px solid #A6C0C5; }
 
-.code aside, .tech aside { border-left: 1px solid #91C2C0;} 
-.life aside { border-left: 1px solid #019875; }
+.code aside, .code aside { border-left: 1px solid #91C2C0;} 
+.bike aside { border-left: 1px solid #019875; }
 .everything aside { border-left: 1px solid #A6C0C5; }
 
-.code #main-footer section, .tech  #main-footer section { border-top: 1px solid #91C2C0;} 
-.life  #main-footer section { border-top: 1px solid #019875; }
+.code #main-footer section, .code  #main-footer section { border-top: 1px solid #91C2C0;} 
+.bike  #main-footer section { border-top: 1px solid #019875; }
 .everything  #main-footer section { border-top: 1px solid #A6C0C5; }
 
 
@@ -661,8 +661,8 @@ aside .button, aside button.negative, aside .negative.button, aside
 
 .grid .item:nth-child(5n+5) { margin-right: 0; }
 
-.grid .item.life { border-bottom: 3px solid #019875; }
-.grid .item.tech, .grid .item.code { border-bottom: 3px solid #91C2C0; }
+.grid .item.bike { border-bottom: 3px solid #019875; }
+.grid .item.code, .grid .item.code { border-bottom: 3px solid #91C2C0; }
 .grid .item.everything { border-bottom: 3px solid #A6C0C5; }
 
 .grid img {
@@ -697,15 +697,15 @@ aside .button, aside button.negative, aside .negative.button, aside
     text-align: left;
 }
 
-.item.life .caption {
+.item.bike .caption {
 	background: #019875; 
 }
 
-.item.tech .caption, .item.code .caption {
+.item.code .caption, .item.code .caption {
     background: #91C2C0;
 }
 
-.item.everything .caption{
+.item.everything .caption {
     background: #A6C0C5;
 }
 
