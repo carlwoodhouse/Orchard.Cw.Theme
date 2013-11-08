@@ -70,3 +70,9 @@
 .home-page .widget-Github .details .commits .message {
     display: inline-block;
 }
+
+.home-page .widget-bike img {
+    float: left;
+    padding: 0 70px 10px 0;
+    border-bottom: 3px solid #019875;
+}
