@@ -8,12 +8,18 @@
 .home-page .widget-bike {
 	float: left;
 	width: 50%;
+	padding-right: 25px;
 }
 
 .home-page .widget-code,
 .home-page .widget-Code {
     float: left;
     width: 50%;
+}
+
+.home-page .widget-bike-grid {
+	clear: right;
+	padding-top: 60px;
 }
 
 .home-page .widget-github .details, .home-page .widget-Github .details,
