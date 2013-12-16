@@ -5,14 +5,13 @@
         @foreach (var post in Model.Items) {
             var imagePart = post.ContentItem.ImagePage;
             var img = imagePart.Image;
-
 			<div class="item bike rollable">
 				<img width="181" height="181" src="@Url.Content(img.Url)" alt="" title="" />
-				<div class="caption" style="display: none;">
-					<h3>@imagePart.Title</h3>
-					<p></p>
-					<a class="button" href="@Url.ItemDisplayUrl((ContentItem)imagePart.ContentItem)">Read More</a>
-                </div>
+				 <div class="caption" style="display: none;">
+                        <h3>@post.ContentItem.TitlePart.Title</h3>
+                        <p></p>
+                        <a class="button" href="@Url.ItemDisplayUrl((ContentItem)post.ContentItem)">Read More</a>
+                    </div>
             </div>     			
         }
     </div>  

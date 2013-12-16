@@ -5,6 +5,11 @@
 	border-top: 1px solid #019875;
 }
 
+.home-page .widget-bike {
+	float: left;
+	width: 50%;
+}
+
 .home-page .widget-code,
 .home-page .widget-Code {
     float: left;
