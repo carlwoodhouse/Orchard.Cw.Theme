@@ -3,21 +3,19 @@
 @if(Model.Items != null) {
     <div class="grid">
         @foreach (var post in Model.Items) {
-            var contentItem = post.ContentItem;
-			var imagePart = contentItem.ImagePage;
-            var img = contentItem.imagePart;
-			if (img != null)
-			{
+            var imagePart = post.ContentItem.ImagePage;
+            var img = imagePart.Image;
+
 			<p>hi</p>
          //       <div class="item bike rollable">
 		//			<img width="181" height="181" src="@Url.Content(img.Url)" alt="" title="" />
           //          <div class="caption" style="display: none;">
            //             <h3>@contentItem.Title</h3>
           //              <p></p>
-             //           <a class="button" href="@Url.ItemDisplayUrl((ContentItem)contentItem)">Read More</a>
+             //           <a class="button" href="@Url.ItemDisplayUrl((ContentItem)imagePart.ContentItem)">Read More</a>
             //        </div>
             //    </div>     
-			}				
+							
         }
     </div>  
  <div class="clear"/>
