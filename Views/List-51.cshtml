@@ -5,6 +5,8 @@
         @foreach (var post in Model.Items) {
             var contentItem = post.ContentItem;
             var img = contentItem.Image;
+			if (img != null)
+			{
                 <div class="item bike rollable">
 					<img width="181" height="181" src="@Url.Content(img.Url)" alt="" title="" />
                     <div class="caption" style="display: none;">
@@ -12,7 +14,8 @@
                         <p></p>
                         <a class="button" href="@Url.ItemDisplayUrl((ContentItem)contentItem)">Read More</a>
                     </div>
-                </div>                 
+                </div>     
+			}				
         }
     </div>  
  <div class="clear"/>
