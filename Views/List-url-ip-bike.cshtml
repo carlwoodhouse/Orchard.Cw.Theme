@@ -1,7 +1,7 @@
 @using Orchard.ContentManagement
 
 @if(Model.Items != null) {
-    <div class="grid">
+    <div class="grid break3">
         @foreach (var post in Model.Items) {
             var imagePart = post.ContentItem.ImagePage;
             var img = imagePart.Image;
