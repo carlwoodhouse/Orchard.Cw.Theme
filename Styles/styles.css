@@ -655,6 +655,7 @@ aside .button, aside button.negative, aside .negative.button, aside
 }
 
 .grid .item:nth-child(5n+5) { margin-right: 0; }
+.grid.break3 .item:nth-child(5n+5) { margin-right: 13px; }
 .grid.break3 .item:nth-child(3n+3) { margin-right: 0; }
 
 .grid .item.bike { border-bottom: 3px solid #019875; }
