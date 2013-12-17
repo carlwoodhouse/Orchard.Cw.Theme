@@ -71,12 +71,6 @@
     display: inline-block;
 }
 
-.home-page .widget-bike img {
-    float: left;
-    margin: 0 70px 10px 0;
-    border-bottom: 3px solid #019875;
-}
-
 .home-page .widget-instagram .view-more,
 .home-page .widget-Instagram .view-more {
     background-color: #A6C0C5;
