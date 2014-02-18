@@ -12,7 +12,7 @@
             var markup = item.Element("content").Value as string;
             if (!string.IsNullOrEmpty(markup))
             {
-                markup = markup.Replace(@"href=""/", "https://www.github.com/");
+                markup = markup.Replace("href=\"/", "https://www.github.com/");
             }
             
 		   <li class="github-activity-row">@Html.Raw(markup)</li>
