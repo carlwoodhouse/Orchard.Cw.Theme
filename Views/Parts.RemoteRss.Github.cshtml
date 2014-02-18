@@ -8,7 +8,14 @@
 		var count = 1;
 		foreach(var item in feed)
 		{
-		   <li class="github-activity-row">@Html.Raw(item.Element("content").Value)</li>
+            // have to do this to fix the relative links to avs
+            var markup = item.Element("content").Value as string;
+            if (!string.IsNullOrEmpty(markup))
+            {
+                markup = markup.Replace(@"href=""/", "https://www.github.com/");
+            }
+            
+		   <li class="github-activity-row">@Html.Raw(markup)</li>
 
 			if (count == (int)Model.ItemsToDisplay ) {
 				break;
