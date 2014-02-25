@@ -6,7 +6,7 @@
     @{
         var count = 1;
     
-        foreach(var item in feed.Where(x => x.Element("title").Value.Contains('#mtb')))
+        foreach(var item in feed.Where(x => ((string)x.Element("title").Value).Contains("#mtb")))
         {
             var imageSrc = Regex.Match(item.Element("description").Value, "<img.*?src=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[1].Value;
             <div class="item everything rollable">
