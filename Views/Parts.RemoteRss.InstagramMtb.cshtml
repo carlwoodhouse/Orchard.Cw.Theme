@@ -1,0 +1,28 @@
+﻿@using System.Text.RegularExpressions
+@{
+    var feed = ((IEnumerable<dynamic>) Model.Feed.Element("channel").Elements("item"));
+}
+<div class="grid clear">
+    @{
+        var count = 1;
+    
+        foreach(var item in feed.Where(x => x.Element("title").Value.Contains('#mtb')))
+        {
+            var imageSrc = Regex.Match(item.Element("description").Value, "<img.*?src=[\"'](.+?)[\"'].*?>", RegexOptions.IgnoreCase).Groups[1].Value;
+            <div class="item everything rollable">
+                <img width="181" height="181" src="@imageSrc" alt="" title="" />
+                <div class="caption" style="display: none;">
+                    <p>@item.Element("title").Value</p>
+                    <a class="button" href="http://instagram.com/carlwoodhouse" target="_blank">View</a>
+                </div>
+            </div>
+            if (count == (int)Model.ItemsToDisplay ) {
+                break;
+            }
+
+            count++;
+        }
+    }
+</div>
+
+<span class="right ico-instagram view-more"><a target="_blank" href="http://instagram.com/carlwoodhouse">More</a></span>
