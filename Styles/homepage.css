@@ -71,6 +71,11 @@
     display: inline-block;
 }
 
+.home-page .widget-InstagramMtb
+{
+    height: 390px;
+}
+
 .home-page .widget-instagram .view-more,
 .home-page .widget-Instagram .view-more,
 .home-page .widget-InstagramMtb .view-more
