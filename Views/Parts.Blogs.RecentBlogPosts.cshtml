@@ -32,7 +32,7 @@
         {
             var blogPostPart = post.ContentItem.BlogPostPart;
             <li>
-                <a href="@Url.ItemDisplayUrl((ContentItem)post.ContentItem)"><img data-tooltip="@blogPostPart.Title" class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.Url)" alt="@blogPostPart.Title"/></a>
+                <a href="@Url.ItemDisplayUrl((ContentItem)post.ContentItem)"><img data-tooltip="@blogPostPart.Title" class="left" width="50px" height="50px" src="@Url.Content((string)blogPostPart.FeaturedThumbnail.MediaParts[0].MediaUrl)" alt="@blogPostPart.Title"/></a>
             </li>
        
             count++;

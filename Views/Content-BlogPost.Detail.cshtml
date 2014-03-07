@@ -6,7 +6,7 @@
 
     Style.Include("posts.css");
     var pageClass = (string) Model.ContentItem.BlogPostPart.Category.Value;
-    var thumbnail = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnail.Url;
+    var thumbnail = (string)Model.ContentItem.BlogPostPart.FeaturedThumbnail.MediaParts[0].MediaUrl;
     Layout.PageClass = !string.IsNullOrWhiteSpace(pageClass) ? pageClass.ToLower() : string.Empty;
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
 }
